@@ -1,15 +1,11 @@
 {
   "name": "d3-mind-map",
   "version": "1.0.0",
-  "description": "mind-map using d3,js",
-  "main": "index.ts",
+  "description": "mind-map using d3.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
-    "prebuild": "rmdir dist /s /q",
-    "build": "parcel build index.html",
-    "predeploy": "rmdir dist /s /q && parcel build index.html --public-url ./",
-    "deploy": "gh-pages -d dist"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -18,20 +14,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kdashivantha/d3-mind-map/issues"
-  },
-  "homepage": "https://github.com/kdashivantha/d3-mind-map#readme",
-  "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.24.0",
-    "typescript": "^3.7.3"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
     "@types/d3": "^5.7.2",
     "d3": "^5.14.2",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.0",
     "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.33",
+    "typescript": "^5.2.2"
   }
 }
