@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { MindMap } from '../components/mindmap'
+import { MindMap } from '@/components/mindmap'
 import mapData from '../data/mapdata'
 
 export default function Home() {
